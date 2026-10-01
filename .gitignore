@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# MediaPipe model + WASM runtime (~42MB).
+# These are fetched by `npm install` via the postinstall script, so they are
+# intentionally not tracked. Committing them would bloat the repo for no
+# benefit and slow every clone.
+public/models/
+public/wasm/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Test / tooling caches
+.cache/
+coverage/
+.vitest/

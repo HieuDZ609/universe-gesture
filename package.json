@@ -1,0 +1,41 @@
+{
+  "name": "universe-gesture",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "Vũ trụ hạt 3D điều khiển bằng nhận diện tay qua camera máy tính",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HieuDZ609/universe-gesture.git"
+  },
+  "homepage": "https://github.com/HieuDZ609/universe-gesture#readme",
+  "bugs": {
+    "url": "https://github.com/HieuDZ609/universe-gesture/issues"
+  },
+  "keywords": [
+    "threejs",
+    "webgl",
+    "gesture-recognition",
+    "mediapipe",
+    "particles",
+    "computer-vision",
+    "creative-coding"
+  ],
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node tests/logic.test.mjs && node tests/gestures.test.mjs",
+    "postinstall": "node scripts/fetch-assets.mjs"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "1.0.1",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "vite": "8.3.1"
+  }
+}
