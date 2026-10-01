@@ -152,12 +152,15 @@ Code của dự án: **MIT** — xem [LICENSE](LICENSE).
 
 Thành phần bên thứ ba giữ giấy phép riêng, không nằm trong MIT:
 
-| Thành phần | Giấy phép | Vai trò |
-|---|---|---|
-| [Three.js](https://threejs.org) | MIT | render 3D, particle system |
-| [MediaPipe Tasks Vision](https://ai.google.dev/edge/mediapipe) | Apache-2.0 | nhận diện tay + file WASM |
-| [HandLandmarker model](https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task) | Apache-2.0 | trọng số mô hình, tải lúc `npm install` |
-| [Vite](https://vite.dev) | MIT | dev server + build |
+| Thành phần | Phiên bản | Giấy phép | Vai trò |
+|---|---|---|---|
+| [Three.js](https://threejs.org) | 0.186.1 | MIT | render 3D, particle system |
+| [MediaPipe Tasks Vision](https://ai.google.dev/edge/mediapipe) | 1.0.1 | Apache-2.0 | nhận diện tay + file WASM |
+| [HandLandmarker model](https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task) | float16/1 | Apache-2.0 | trọng số mô hình, tải lúc `npm install` |
+| [Vite](https://vite.dev) | 8.3.1 | MIT | dev server + build |
+
+Tất cả đều được pin **chính xác** (không `^` / `~`) và `package-lock.json` khoá
+integrity. Bản đầy đủ: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 Model và file WASM **không** commit vào repo (42MB). Script `postinstall` tải lại
 giúp bạn, nên clone về là chạy được ngay.
